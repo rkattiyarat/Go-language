@@ -24,10 +24,7 @@ func circle(radius float64) float64 {
 	return math.Pi * (radius * radius)
 }
 
-func main() {
-	greeting("Rose")
-	sayBye("Rose")
-	loopNames([]string{"Rose", "Emma", "kate"}, greeting)
-	loopNames([]string{"Rose", "Emma", "kate"}, sayBye)
-	fmt.Print(math.Round(circle(12.12)))
+//this function use var from test.go variable which is outside main func but in the same package and call sayAge in main func
+func sayAge(age int) {
+	fmt.Printf("I am %v years old \n", age)
 }
